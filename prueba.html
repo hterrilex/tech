@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+  <div class="cart-container">
+    <h2>Carrito de Compras</h2>
+
+    <!-- Lista de productos en HTML -->
+    <div class="product" data-name="Producto 1" data-price="10">
+      <h4>Producto 1</h4>
+      <p>Precio: $10</p>
+      <button class="add">+</button>
+      <button class="remove">-</button>
+      <button class="delete">🗑️</button>
+    </div>
+    <div class="product" data-name="Producto 2" data-price="20">
+      <h4>Producto 2</h4>
+      <p>Precio: $20</p>
+      <button class="add">+</button>
+      <button class="remove">-</button>
+      <button class="delete">🗑️</button>
+    </div>
+
+    <!-- Carrito de productos -->
+    <div id="cart-items"></div>
+    <div id="cart-total">Total: $0.00</div>
+
+    <!-- Botones para acciones del carrito -->
+    <button class="empty-cart-button" onclick="emptyCart()">Vaciar carrito</button>
+    <button class="pay-cart-button" onclick="payCart()">Pagar</button>
+  </div>
+
+  <script src="js/script3.js"></script>
+</body>
+</html>

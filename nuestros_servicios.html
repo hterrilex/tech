@@ -9,8 +9,9 @@
     <meta name="author" content="hterrile">
     <title>Tienda de Mascotas </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    
     <link rel="icon" href="img/logo1.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +20,10 @@
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Seymour+One&display=swap"
         rel="stylesheet">
      <!-- página de animaciones-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <!-- página de estilos de iconos-->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/949042685a.js" crossorigin="anonymous"></script>
 </head>
@@ -175,18 +177,18 @@
           - #GRID SHOP
         -->
 
-    <section class="section product" id="shop" aria-label="product">
+    <section class="section productos" id="shop" aria-label="productos">
         <div class="container">
 
             <h2 class="h2 section-title">
-                <span class="span">Shop</span> Amigo
+                <span class="span">Shop</span> Mascotas
             </h2>
 
             <ul class="grid-list row">
 
                 <li class="col-lg-4 prod">
                     <div class="product-card">
-                        <a href="#" class="card-title">
+                        <div class="product" data-name="Ultamino" data-price="15">
                             <div class="card-banner img-holder">
                                 <img src="./img/product-1.jpg" loading="lazy" alt="Commodo leo sed porta"
                                     class="img-cover default">
@@ -194,19 +196,48 @@
 
                             <div class="card-content">
                                 <h3 class="h3">
-                                    Balanceado Perro
+                                    Ultamino
                                 </h3>
 
                                 <data class="card-price" value="15">$15.00</data>
+                                <div class="product-actions">
+                                    <button class="add">+</button>
+                                    <button class="remove">-</button>
+                                    <button class="delete">🗑️</button>
+                                </div>
 
                             </div>
-                        </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-4 prod">
+                    <div class="product-card">
+                        <div class="product" data-name="Collar Anti Pulgas" data-price="25">
+                            <div class="card-banner img-holder">
+                                <img src="./img/product-0.jpg" loading="lazy" alt="Commodo leo sed porta"
+                                    class="img-cover default">
+                            </div>
+
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    Collar Anti Pulgas
+                                </h3>
+
+                                <data class="card-price" value="25">$25.00</data>
+                                <div class="product-actions">
+                                    <button class="add">+</button>
+                                    <button class="remove">-</button>
+                                    <button class="delete">🗑️</button>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </li>
 
                 <li class="col-lg-4 prod">
                     <div class="product-card">
-                        <a href="#" class="card-title">
+                        <div class="product" data-name="Shrimp Pellet alimento para peces" data-price="45">
                             <div class="card-banner img-holder">
                                 <img src="./img/product-2.jpg" loading="lazy" alt="Purus consequat congue sit"
                                     class="img-cover default">
@@ -215,19 +246,24 @@
                             <div class="card-content">
 
                                 <h3 class="h3">
-                                    Pellet pez
+                                    Shrimp Pellet alimento para peces
                                 </h3>
 
                                 <data class="card-price" value="45">$45.00</data>
+                                <div class="product-actions">
+                                    <button class="add">+</button>
+                                    <button class="remove">-</button>
+                                    <button class="delete">🗑️</button>
+                                </div>
 
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </li>
 
                 <li class="col-lg-4 prod">
                     <div class="product-card">
-                        <a href="#" class="card-title">
+                        <div class="product" data-name="Shrimp alimento para peces" data-price="65">
                             <div class="card-banner img-holder">
                                 <img src="./img/product-3.jpg" loading="lazy" alt="Morbi vel arcu scelerisque"
                                     class="img-cover default">
@@ -236,40 +272,45 @@
                             <div class="card-content">
 
                                 <h3 class="h3">
-                                    Pellet pez
+                                    Shrimp alimento para peces
                                 </h3>
 
-                                <data class="card-price" value="45">$45.00</data>
-
+                                <data class="card-price" value="65">$65.00</data>
+                                <div class="product-actions">
+                                    <button class="add">+</button>
+                                    <button class="remove">-</button>
+                                    <button class="delete">🗑️</button>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </li>
 
                 <li class="col-lg-4 prod">
                     <div class="product-card">
-                        <a href="#" class="card-title">
+                        <div class="product" data-name="Alimento para Aves" data-price="49">
                             <div class="card-banner img-holder">
                                 <img src="./img/product-4.jpg" loading="lazy" alt="Morbi vel arcu scelerisque"
                                     class="img-cover default">
                             </div>
-
                             <div class="card-content">
-
                                 <h3 class="h3">
-                                    Comida de Ave
+                                    Alimento para Aves
                                 </h3>
-
                                 <data class="card-price" value="49">$49.00</data>
-
+                                <div class="product-actions">
+                                    <button class="add">+</button>
+                                    <button class="remove">-</button>
+                                    <button class="delete">🗑️</button>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </li>
 
                 <li class="col-lg-4 prod">
                     <div class="product-card">
-                        <a href="#" class="card-title">
+                        <div class="product" data-name="Juguete para gatos" data-price="85">
                             <div class="card-banner img-holder">
                                 <img src="./img/product-5.jpg" loading="lazy" alt="Morbi vel arcu scelerisque"
                                     class="img-cover default">
@@ -278,82 +319,107 @@
                             <div class="card-content">
 
                                 <h3 class="h3">
-                                    Juguete gatito
+                                    Juguete para gatos
                                 </h3>
 
                                 <data class="card-price" value="85">$85.00</data>
+                                <div class="product-actions">
+                                    <button class="add">+</button>
+                                    <button class="remove">-</button>
+                                    <button class="delete">🗑️</button>
+                                </div>
 
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </li>
 
                 <li class="col-lg-4 prod">
                     <div class="product-card">
-                        <a href="#" class="card-title">
+                        <div class="product" data-name="Difusor Gatos" data-price="95">
                             <div class="card-banner img-holder">
                                 <img src="./img/product-6.jpg" loading="lazy" alt="Nam justo libero porta ege"
                                     class="img-cover default">
                             </div>
-
                             <div class="card-content">
-
                                 <h3 class="h3">
-                                    Balanceado Gato
+                                    Difusor Gatos
                                 </h3>
-
-                                <data class="card-price" value="85">$85.00</data>
-
+                                <data class="card-price" value="85">$95.00</data>
+                                <div class="product-actions">
+                                    <button class="add">+</button>
+                                    <button class="remove">-</button>
+                                    <button class="delete">🗑️</button>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </li>
 
                 <li class="col-lg-4 prod">
                     <div class="product-card">
-                        <a href="#" class="card-title">
+                        <div class="product" data-name="Balanceado Pro Plan" data-price="105">
                             <div class="card-banner img-holder">
                                 <img src="./img/product-7.jpg" loading="lazy" alt="Nam justo libero porta ege"
                                     class="img-cover default">
                             </div>
-
                             <div class="card-content">
-
                                 <h3 class="h3">
-                                    Balanceado perro
+                                    Balanceado Pro Plan
                                 </h3>
-
-                                <data class="card-price" value="85">$85.00</data>
-
+                                <data class="card-price" value="105">$105.00</data>
+                                <div class="product-actions">
+                                    <button class="add">+</button>
+                                    <button class="remove">-</button>
+                                    <button class="delete">🗑️</button>
+                                </div>
                             </div>
-                        </a>
+                        </div>    
                     </div>
                 </li>
 
                 <li class="col-lg-4 prod">
                     <div class="product-card">
-                        <a href="#" class="card-title">
+                        <div class="product" data-name="Ciudado Urinario" data-price="39">
                             <div class="card-banner img-holder">
                                 <img src="./img/product-8.jpg" loading="lazy" alt="Etiam commodo leo sed"
                                     class="img-cover default">
                             </div>
-
                             <div class="card-content">
-
                                 <h3 class="h3">
-                                    Balanceado perro
+                                    Cuidado Urinario
                                 </h3>
-
-                                <data class="card-price" value="55">$55.00</data>
-
+                                <data class="card-price" value="39">$39.00</data>  
+                                
+                                
+                                
+                                <div class="product-actions">
+                                    <button class="add">+</button>
+                                    <button class="remove">-</button>
+                                    <button class="delete">🗑️</button>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </li>
 
             </ul>
 
         </div>
+        
+
+        <h2 class="h2 section-title">
+            <span class="span">Carrito </span> Compras
+        </h2>        
+        
+            <div id="cart-items"></div>
+            <div id="cart-total">Total: $0.00</div>
+        
+            <!-- Botones para acciones del carrito -->
+            <div class="cart-actions">
+                <button class="empty-cart-button" onclick="emptyCart()">Vaciar carrito</button>
+                <button class="pay-cart-button" onclick="payCart()">Pagar</button>
+            </div>
     </section>
     <!-- 
         - #END PRODUCT
@@ -472,5 +538,5 @@
       - #END FOOTER
     -->
 </body>
-
+<script src="js/script3.js"></script>
 </html>
